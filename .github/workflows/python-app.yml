@@ -28,5 +28,5 @@ jobs:
       with:
         creds: ${{ secrets.CREDENTIAL }}
     - run: |
-        az webapp up --sku F1 --name testingpython2    
+        az webapp up --sku F1 --name testpythonapi    
     
