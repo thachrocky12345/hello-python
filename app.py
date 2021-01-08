@@ -1,14 +1,6 @@
 from flask import Flask
+from controllers import register_blueprints
 
+app = Flask(__name__)
+register_blueprints(app)
 
-def create_app() -> Flask:
-    app = Flask(__name__)
-
-    from controllers import register_blueprints
-    register_blueprints(app)
-
-    return app
-
-
-if __name__ == "__main__":
-    create_app()
