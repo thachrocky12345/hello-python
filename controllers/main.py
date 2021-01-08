@@ -6,4 +6,4 @@ bp = Blueprint('main', __name__)
 
 @bp.route('/')
 def index():
-    return "main"
+    return json.dumps({"result": "main"})
